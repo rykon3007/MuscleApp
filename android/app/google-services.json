@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "54879031630",
+    "project_id": "pizza-70340",
+    "storage_bucket": "pizza-70340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54879031630:android:65186938bc302a8ead8e1f",
+        "android_client_info": {
+          "package_name": "com.outbox.lit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54879031630-831kqo984erlent83ooaekfbbu2msini.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.outbox.lit",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "54879031630-tq24shak8udrsacfv785h45kpu1kbofi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9nTaa8gKOWDqWxLQn9cwZaHdrpG1Y4sA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54879031630-tq24shak8udrsacfv785h45kpu1kbofi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "54879031630-42dcfcff7ono5442tfpr9ra4b2qqou42.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.outbox.lit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
