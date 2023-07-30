@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -39,6 +41,7 @@ class _AddedtocartWidgetState extends State<AddedtocartWidget> {
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
+    int randomNumber = Random().nextInt(35);
 
     return Align(
       alignment: AlignmentDirectional(0.0, 0.0),
@@ -76,7 +79,7 @@ class _AddedtocartWidgetState extends State<AddedtocartWidget> {
               ClipRRect(
                 borderRadius: BorderRadius.circular(30.0),
                 child: Image.network(
-                  'https://public-muscle-app.s3.ap-northeast-1.amazonaws.com/mosaic.png',
+                  'https://spajam-jbs-app.azurewebsites.net/hello?num=$randomNumber',
                   width: 300.0,
                   height: 162.0,
                   fit: BoxFit.cover,

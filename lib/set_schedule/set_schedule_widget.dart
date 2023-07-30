@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -21,6 +23,7 @@ class SetScheduleWidget extends StatefulWidget {
 
 class _SetScheduleWidgetState extends State<SetScheduleWidget> {
   late SetScheduleModel _model;
+  late String _body_tag;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   late StreamSubscription<bool> _keyboardVisibilitySubscription;
@@ -30,6 +33,7 @@ class _SetScheduleWidgetState extends State<SetScheduleWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SetScheduleModel());
+    _body_tag = "";
 
     if (!isWeb) {
       _keyboardVisibilitySubscription =
@@ -56,7 +60,6 @@ class _SetScheduleWidgetState extends State<SetScheduleWidget> {
   @override
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
-
     return GestureDetector(
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
@@ -186,7 +189,7 @@ class _SetScheduleWidgetState extends State<SetScheduleWidget> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
-                                    'assets/images/ASIS.png',
+                                    'assets/images/ASIS$_body_tag.png',
                                     width: 300.0,
                                     height: 366.0,
                                     fit: BoxFit.fitHeight,
@@ -213,6 +216,14 @@ class _SetScheduleWidgetState extends State<SetScheduleWidget> {
                               onChanged: (newValue) {
                                 newValue =
                                     double.parse(newValue.toStringAsFixed(2));
+                                if (newValue > 5) {
+                                  _body_tag = "_fat";
+                                  print('aaaaa');
+                                } else if (newValue == 5) {
+                                  _body_tag = "";
+                                } else {
+                                  _body_tag = "_lean";
+                                }
                                 setState(() => _model.sliderValue = newValue);
                               },
                             ),
