@@ -3,8 +3,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:async';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'set_schedule_model.dart';
 export 'set_schedule_model.dart';
@@ -182,11 +185,11 @@ class _SetScheduleWidgetState extends State<SetScheduleWidget> {
                                     0.0, 16.0, 0.0, 0.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
-                                  child: Image.network(
-                                    'https://pbs.twimg.com/profile_images/1577074113327136768/y5GoGZ08_400x400.jpg',
+                                  child: Image.asset(
+                                    'assets/images/ASIS.png',
                                     width: 300.0,
                                     height: 366.0,
-                                    fit: BoxFit.cover,
+                                    fit: BoxFit.fitHeight,
                                   ),
                                 ),
                               ),
