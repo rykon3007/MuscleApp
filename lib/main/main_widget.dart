@@ -291,7 +291,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
       onTap: () => FocusScope.of(context).requestFocus(_model.unfocusNode),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: FlutterFlowTheme.of(context).secondary,
         body: Column(
           mainAxisSize: MainAxisSize.max,
           children: [

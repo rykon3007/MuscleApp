@@ -68,7 +68,7 @@ class _AddedtocartWidgetState extends State<AddedtocartWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
                   child: SelectionArea(
                       child: Text(
-                    'Get a peace',
+                    'Get a treasure',
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   )),
                 ),

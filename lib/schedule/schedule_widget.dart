@@ -98,7 +98,7 @@ class _ScheduleWidgetState extends State<ScheduleWidget>
           title: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
             child: Text(
-              'My treasure',
+              'My schedule',
               style: FlutterFlowTheme.of(context).headlineMedium.override(
                     fontFamily: 'Bebas Neue',
                     color: Colors.white,
@@ -127,56 +127,17 @@ class _ScheduleWidgetState extends State<ScheduleWidget>
                     )
                   ],
                 ),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
-                          16.0, 12.0, 16.0, 12.0),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 12.0, 0.0),
-                                child: Icon(
-                                  Icons.radio_button_checked,
-                                  color: FlutterFlowTheme.of(context).primary,
-                                  size: 16.0,
-                                ),
-                              ),
-                              Text(
-                                'Tasks',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
-                            ],
-                          ),
-                          Row(
-                            mainAxisSize: MainAxisSize.max,
-                            children: [
-                              Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
-                                    0.0, 0.0, 12.0, 0.0),
-                                child: Icon(
-                                  Icons.radio_button_checked,
-                                  color: FlutterFlowTheme.of(context).secondary,
-                                  size: 16.0,
-                                ),
-                              ),
-                              Text(
-                                'Completed',
-                                style: FlutterFlowTheme.of(context).bodyMedium,
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(8.0),
+                  child: Image.asset(
+                    'assets/images/chart.png',
+                    width: double.infinity,
+                    height: 200.0,
+                    fit: BoxFit.cover,
+                  ),
                 ),
               ),
               Padding(
