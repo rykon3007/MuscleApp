@@ -909,7 +909,7 @@ class _MainWidgetState extends State<MainWidget> with TickerProviderStateMixin {
 
                             // Wait for the Animation
                             await Future.delayed(
-                                const Duration(milliseconds: 1900));
+                                const Duration(milliseconds: 3900));
                             // Dismiss Indicator
                             Navigator.pop(context);
                             FFAppState().update(() {
